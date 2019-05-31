@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src = dom.js></script>
     <title>CSS Selectors</title>
 </head>
 <body>
 
     <div class = selectorstitle>
-        <p>CSS Selectors</p>
+        <h1><p>CSS Selectors</p></h1>
     </div>
 
     <div class = selectorstext1>
@@ -20,8 +19,56 @@
     </div>
 
     <!-- ID -->
+    <code><h3><p># (id)</p></h3></code>
+    Example 1 - 
+    <button type = 'button' id = "button1" onclick = "toggleTextID()">Example 1</button>
+    <p id = 'selectorsex1' style = 'display: none'>
+        HTML: <br>
+        <code>
+            &lt;tag id = "example"&gt;&lt;/tag&gt;<br>
+        </code>
+        
+        CSS: <br>
+        <code>#example {
+
+        }
+        </code> <br>     
+    </p>
+
     <!-- CLASS -->
+    <code><h3><p>. (class)</p></h3></code>
+    Example 2 - 
+    <button type = 'button' id = "button1" onclick = "toggleTextCL()">Example 2</button>
+    <p id = 'selectorsex2' style = 'display: none'>
+        HTML: <br>
+        <code>
+            &lt;tag class = "example"&gt;&lt;/tag&gt;<br>
+        </code>
+        
+        CSS: <br>
+        <code>.example {
+
+        }
+        </code> <br>     
+    </p>
+
     <!-- ELEMENT -->
+    <code><h3><p>/nothing/ (element)</p></h3></code>
+    Example 3 - 
+    <button type = 'button' id = "button1" onclick = "toggleTextEL()">Example 3</button>
+    <p id = 'selectorsex3' style = 'display: none'>
+        HTML: <br>
+        <code>
+            &lt;p&gt;&lt;/p&gt; <br>
+        </code>
+        
+        CSS: <br>
+        <code>p {
+
+        }
+        </code> <br>     
+    </p>
     
 </body>
+<script src = dom.js></script>
 </html>
