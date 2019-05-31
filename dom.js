@@ -11,11 +11,13 @@ main_p.addEventListener("click", () => {
     counter = counter + 1;
     main_p.innerText = `This button has been clicked: ${counter} times.`;
 });
+*/
 
-let button = document.getElementById("button");
-button.addEventListener("mouseover", () => {
-    document.body.style.backgroundColor = "red";
-});*/
+let colortext = document.getElementById("codetext");
+colortext.addEventListener("mouseover", () => {
+    document.body.style.backgroundColor = "blue";
+});
+
 function toggleText() {
     var text = document.getElementById("demo");
     if (text.style.display === "none") {

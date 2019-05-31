@@ -7,53 +7,60 @@
     <title>CSS Combinators Pt. 1</title>
 </head>
 <body>
-    CSS Combinators Pt. 1
+    
+    <p>CSS Combinators Pt. 1</p>
 
-    In CSS, combinators are another form of communicating with HTML about which elements and segments of 
+    <p>In CSS, combinators are another form of communicating with HTML about which elements and segments of 
     code have particular styling applied to them. The difference is between combinators and selectors
     is that combinators depict relations between different blocks of code. This section of the website will
-    describe the parent-child and ancestor-descendant combinators.
+    describe the parent-child and ancestor-descendant combinators.</p>
     
-    >
-    For example, the > symbol designates the relationship between a parent and child block of code:
+    <p>></p>
+    <p>For example, the > symbol designates the relationship between a parent and child block of code:</p>
     <!-- EXAMPLE: JavaScript Here -->
     Example 1 - 
-    HTML:
-    <code>
-        &lt;parent&gt;
-            &lt;child&gt;&lt;/child&gt;
-        &lt;/parent&gt;
-    </code>
+    <button type = 'button' id = "button" onclick = "toggleText()">Example 1</button>
+    <p id = 'demo' style = 'display: none'>
+            HTML: <br>
+            <code>
+                &lt;parent&gt; <br>
+                    &lt;child&gt;&lt;/child&gt; <br>
+                &lt;/parent&gt; <br>
+            </code>
+        
+            CSS: <br>
+            <code>parent>child</code> <br>     
+    </p>
 
-
-    CSS:
-    parent>child
 
     <!-- Border Here? -->
+    <p>________________________</p>
 
-    [space]
-    Similarly, the [space] symbol designates a similar relationship between a greater block of code and a lesser.
+    <p>[space]</p>
+    <p>Similarly, the [space] symbol designates a similar relationship between a greater block of code and a lesser.
     This [space] symbol however more generally applies to any block of code within a greater initial
-    block; not necessarily the code block directly underneath it. 
-
-    This relationship is known as the ancestor-descendant:
+    block; not necessarily the code block directly underneath it.</p>
+    <p>This relationship is known as the ancestor-descendant:</p>
     <!-- EXAMPLE: JavaScript Here -->
-    Example 2 - 
-    HTML:
-    <code>
-    &lt;ancestor&gt;{
-        ...{
-            ...{
-                &lt;descendant&gt;
-            }
-        }
-    }
-    </code>
 
-    CSS:
-    ancestor descendant
-    <p id = 'demo' style = 'display: none'>JavaScript Test.</p>
+    Example 2 -
     <button type = 'button' id = "button" onclick = "toggleText()">Example 1</button>
+    <p id = 'demo' style = 'display: none'>
+    HTML: <br>
+    <code>
+    <p>&lt;ancestor&gt;{ <br>
+        ...{ <br>
+            ...{ <br>
+                &lt;descendant&gt; <br>
+            } <br>
+        } <br>
+    }</p>
+    </code>
+    </p>
+
+    <p>CSS:</p>
+    <code><p>ancestor descendant</p></code>
+
 </body>
 <script src = dom.js></script>
 </html>
