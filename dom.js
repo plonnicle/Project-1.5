@@ -20,7 +20,7 @@ colortext.addEventListener("mouseover", () => {
 
 // Changes applied past this point.
 
-function toggleText() {
+function toggleTextPC() {
     var text = document.getElementById("combinatorex1");
     if (text.style.display === "none") {
       text.style.display = "block";
@@ -29,7 +29,7 @@ function toggleText() {
     }
   }
 
-function toggleText2() {
+function toggleTextAD() {
     var text = document.getElementById("combinatorex2");
     if (text.style.display === "none") {
       text.style.display = "block";
