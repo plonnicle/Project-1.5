@@ -72,7 +72,7 @@ function toggleTextAD() {
 // Combinator Pt. 2 Example Text
 
 function toggleTextAS() {
-    var text = document.getElementById("combinatorsex1");
+    var text = document.getElementById("combinatorsex3");
     if (text.style.display === "none") {
       text.style.display = "block";
     } else {
@@ -81,7 +81,7 @@ function toggleTextAS() {
   }
 
 function toggleTextGS() {
-    var text = document.getElementById("combinatorsex2");
+    var text = document.getElementById("combinatorsex4");
     if (text.style.display === "none") {
       text.style.display = "block";
     } else {
