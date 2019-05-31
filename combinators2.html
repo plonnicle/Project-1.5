@@ -8,39 +8,55 @@
     <title>CSS Combinators Pt. 2</title>
 </head>
 <body>
-    CSS Combinators Pt. 2
 
+    <h1><p>CSS Combinators Pt. 2</p></h1>
 
-    +
+    <p>The sibling combinators designate the relationship between blocks of code on the same level.</p>
+
+    <code><h3><p>+ (adjacent sibling)</p></h3></code>
     <!-- ADJACENT SIBLING -->
-    Example 1 - 
-    <button type = 'button' id = "button1" onclick = "toggleText()">Example 1</button>
-    <p id = 'combinatorex1' style = 'display: none'>
+   
+    Example 3 -
+    <button type = 'button' id = "button1" onclick = "toggleTextAS()">Example 3</button>
+    <p id = 'combinatorsex3' style = 'display: none'>
         HTML: <br>
         <code>
-            &lt;parent&gt; <br>
-                &lt;child&gt;&lt;/child&gt; <br>
-            &lt;/parent&gt; <br>
+            &lt;ol&gt; <br>
+                &lt;li&gt; <br>
+                &lt;/li&gt; <br>
+                <br>
+                &lt;li&gt; <br>
+                &lt;/li&gt; <br>
+            &lt;/ol&gt; <br>
         </code>
         
         CSS: <br>
-        <code>parent>child</code> <br>     
+        <code>li+li</code> <br>     
     </p>
 
-    ~
+    <p>________________________</p>
+
+    <code><h3><p>~ (general sibling)</p></h3></code>
     <!-- GENERAL SIBLING -->
-    Example 1 - 
-    <button type = 'button' id = "button1" onclick = "toggleText()">Example 1</button>
-    <p id = 'combinatorex1' style = 'display: none'>
+
+    Example 4 - 
+    <button type = 'button' id = "button1" onclick = "toggleTextGS()">Example 4</button>
+    <p id = 'combinatorsex4' style = 'display: none'>
         HTML: <br>
         <code>
-            &lt;parent&gt; <br>
-                &lt;child&gt;&lt;/child&gt; <br>
-            &lt;/parent&gt; <br>
+            &lt;ol&gt; <br>
+                &lt;li&gt; <br>
+                &lt;/li&gt; <br>
+            &lt;/ol&gt; <br>
+            <br>
+            &lt;ol&gt; <br>
+                &lt;li&gt; <br>
+                &lt;/li&gt; <br>
+            &lt;/ol&gt; <br>
         </code>
         
         CSS: <br>
-        <code>parent>child</code> <br>     
+        <code>li~li</code> <br>     
     </p>
     
 </body>
