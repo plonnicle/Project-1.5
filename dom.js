@@ -18,8 +18,19 @@ colortext.addEventListener("mouseover", () => {
     document.body.style.backgroundColor = "blue";
 });
 
+// Changes applied past this point.
+
 function toggleText() {
-    var text = document.getElementById("demo");
+    var text = document.getElementById("combinatorex1");
+    if (text.style.display === "none") {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+function toggleText2() {
+    var text = document.getElementById("combinatorex2");
     if (text.style.display === "none") {
       text.style.display = "block";
     } else {

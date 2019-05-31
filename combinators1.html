@@ -17,19 +17,22 @@
     
     <p>></p>
     <p>For example, the > symbol designates the relationship between a parent and child block of code:</p>
+
+    <!-- Note! Examples have been changed code-wise. -->
+    
     <!-- EXAMPLE: JavaScript Here -->
     Example 1 - 
-    <button type = 'button' id = "button" onclick = "toggleText()">Example 1</button>
-    <p id = 'demo' style = 'display: none'>
-            HTML: <br>
-            <code>
-                &lt;parent&gt; <br>
-                    &lt;child&gt;&lt;/child&gt; <br>
-                &lt;/parent&gt; <br>
-            </code>
+    <button type = 'button' id = "button1" onclick = "toggleText()">Example 1</button>
+    <p id = 'combinatorex1' style = 'display: none'>
+        HTML: <br>
+        <code>
+            &lt;parent&gt; <br>
+                &lt;child&gt;&lt;/child&gt; <br>
+            &lt;/parent&gt; <br>
+        </code>
         
-            CSS: <br>
-            <code>parent>child</code> <br>     
+        CSS: <br>
+        <code>parent>child</code> <br>     
     </p>
 
 
@@ -44,22 +47,23 @@
     <!-- EXAMPLE: JavaScript Here -->
 
     Example 2 -
-    <button type = 'button' id = "button" onclick = "toggleText()">Example 1</button>
-    <p id = 'demo' style = 'display: none'>
-    HTML: <br>
-    <code>
-    <p>&lt;ancestor&gt;{ <br>
-        ...{ <br>
+    <button type = 'button' id = "button2" onclick = "toggleText2()">Example 2</button>
+    <p id = 'combinatorex2' style = 'display: none'>
+        HTML: <br>
+        <code>
+        &lt;ancestor&gt;{ <br>
             ...{ <br>
-                &lt;descendant&gt; <br>
+                ...{ <br>
+                    &lt;descendant&gt; <br>
+                } <br>
             } <br>
-        } <br>
-    }</p>
-    </code>
+        }<br>
+        </code>
+
+        CSS:<br>
+        <code>ancestor descendant</code><br>
     </p>
 
-    <p>CSS:</p>
-    <code><p>ancestor descendant</p></code>
 
 </body>
 <script src = dom.js></script>
