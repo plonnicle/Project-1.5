@@ -8,22 +8,21 @@
 </head>
 <body>
     
-    <p>CSS Combinators Pt. 1</p>
+    <h1><p>CSS Combinators Pt. 1</p></h1>
 
     <p>In CSS, combinators are another form of communicating with HTML about which elements and segments of 
     code have particular styling applied to them. The difference is between combinators and selectors
     is that combinators depict relations between different blocks of code. This section of the website will
     describe the parent-child and ancestor-descendant combinators.</p>
-    
-    <p>></p>
-    <p>For example, the > symbol designates the relationship between a parent and child block of code:</p>
 
     <!-- Note! Examples have been changed code-wise. -->
 
     <!-- EXAMPLE: JavaScript Here -->
+    <code><h3><p>> (parent-child)</p></h3></code>
+    <p>For example, the > symbol designates the relationship between a parent and child block of code:</p>
     Example 1 - 
     <button type = 'button' id = "button1" onclick = "toggleTextPC()">Example 1</button>
-    <p id = 'combinatorex1' style = 'display: none'>
+    <p id = 'combinatorsex1' style = 'display: none'>
         HTML: <br>
         <code>
             &lt;parent&gt; <br>
@@ -32,14 +31,13 @@
         </code>
         
         CSS: <br>
-        <code>parent>child</code> <br>     
+        <code>parent>child</code> <br> 
     </p>
-
 
     <!-- Border Here? -->
     <p>________________________</p>
 
-    <p>[space]</p>
+    <code><h3><p>[space] (ancestor-descendant)</p></h3></code>
     <p>Similarly, the [space] symbol designates a similar relationship between a greater block of code and a lesser.
     This [space] symbol however more generally applies to any block of code within a greater initial
     block; not necessarily the code block directly underneath it.</p>
@@ -47,8 +45,8 @@
     <!-- EXAMPLE: JavaScript Here -->
 
     Example 2 -
-    <button type = 'button' id = "button2" onclick = "toggleTextAD()">Example 2</button>
-    <p id = 'combinatorex2' style = 'display: none'>
+    <button type = 'button' tag = "ex" id = "button2" onclick = "toggleTextAD()">Example 2</button>
+    <p id = 'combinatorsex2' style = 'display: none'>
         HTML: <br>
         <code>
         &lt;ancestor&gt;{ <br>
@@ -61,9 +59,10 @@
         </code>
 
         CSS:<br>
-        <code>ancestor descendant</code><br>
+        <code>ancestor descendant {
+        }
+        </code><br>
     </p>
-
 
 </body>
 <script src = dom.js></script>
