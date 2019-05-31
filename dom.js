@@ -20,8 +20,39 @@ colortext.addEventListener("mouseover", () => {
 
 // Changes applied past this point.
 
+// Selector Example Text
+
+function toggleTextID() {
+    var text = document.getElementById("selectorsex1");
+    if (text.style.display === "none") {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+function toggleTextCL() {
+    var text = document.getElementById("selectorsex2");
+    if (text.style.display === "none") {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+function toggleTextEL() {
+    var text = document.getElementById("selectorsex3");
+    if (text.style.display === "none") {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+// Combinator Pt. 1 Example Text
+
 function toggleTextPC() {
-    var text = document.getElementById("combinatorex1");
+    var text = document.getElementById("combinatorsex1");
     if (text.style.display === "none") {
       text.style.display = "block";
     } else {
@@ -30,10 +61,31 @@ function toggleTextPC() {
   }
 
 function toggleTextAD() {
-    var text = document.getElementById("combinatorex2");
+    var text = document.getElementById("combinatorsex2");
     if (text.style.display === "none") {
       text.style.display = "block";
     } else {
       text.style.display = "none";
     }
   }
+
+// Combinator Pt. 2 Example Text
+
+function toggleTextAS() {
+    var text = document.getElementById("combinatorsex1");
+    if (text.style.display === "none") {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
+function toggleTextGS() {
+    var text = document.getElementById("combinatorsex2");
+    if (text.style.display === "none") {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
